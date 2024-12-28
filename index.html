@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D PP Coin</title>
+  <style>
+    /* Reset & Basics */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: monospace;
+      color: #fff;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
 
+    /* Page Layout */
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header, footer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    /* Top Logos */
+    .logo {
+      height: 40px;
+      cursor: pointer;
+    }
+
+    /* Center Title */
+    .page-title {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    /* Middle GIF */
+    .gif-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .gif-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Bottom Section */
+    footer {
+      flex-direction: column;
+      align-items: center;
+    }
+    .bottom-text {
+      margin-bottom: 10px;
+    }
+    .manifesto-button {
+      text-decoration: none;
+      border: 1px solid #fff;
+      padding: 8px 16px;
+      font-family: monospace;
+      color: #fff;
+      background: #000;
+      cursor: pointer;
+    }
+    .manifesto-button:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with two logos -->
+  <header>
+    <!-- Left Logo -->
+    <img 
+      src="pumpFunIcon.png" 
+      alt="Pump Fun Logo" 
+      class="logo"
+      onclick="window.location='https://example.com/pumpfun';"
+    />
+
+    <!-- Right Logo -->
+    <img 
+      src="twitterIcon.png" 
+      alt="X Logo" 
+      class="logo"
+      onclick="window.location='https://example.com/x';"
+    />
+  </header>
+
+  <!-- Title in the Middle -->
+  <div class="page-title">3D PP</div>
+
+  <!-- GIF in the Middle -->
+  <div class="gif-container">
+    <img src="ppgif.gif" alt="3D PP GIF" />
+  </div>
+
+  <!-- Bottom Content -->
+  <footer>
+    <div class="bottom-text">CA: </div>
+    <a href="https://paste.rs/4hkTU.txt" class="manifesto-button">
+      Manifesto
+    </a>
+  </footer>
+
+  <!-- Background Music -->
+  <audio src="your-track.mp3" autoplay loop>
+  </audio>
+</body>
+</html>
